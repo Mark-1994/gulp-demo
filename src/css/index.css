@@ -1,0 +1,175 @@
+body {
+    max-width: 540px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #3d3d3d;
+}
+
+header {
+    background-color: #446adf;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    min-width: 320px;
+    max-width: 540px;
+    height: 65px;
+    display: flex;
+}
+
+header div {
+    flex: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+header>img {
+    width: 40px;
+    height: 40px;
+}
+
+header img {
+    margin: 12.5px;
+}
+
+.focus {
+    padding-top: 65px;
+}
+
+.focus img {
+    width: 100%;
+}
+
+.jobClass {
+    color: #446adf;
+    background-color: #f1f1f1;
+}
+
+.jobClass h3 {
+    text-align: center;
+}
+
+.jobClass ul li {
+    flex: 33.33%;
+}
+
+.jobClass ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobClass ul li a {
+    display: block;
+    background: url(../images/fe-list.png) no-repeat;
+    width: 70px;
+    height: 70px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-size: 70px 70px;
+}
+
+.jobClass ul li:nth-child(2) a {
+    background: url(../images/java.png) no-repeat;
+    background-size: 70px 70px;
+}
+
+.jobClass ul li:nth-child(3) a {
+    background: url(../images/data.png) no-repeat;
+    background-size: 70px 70px;
+}
+
+.jobClass ul li:nth-child(4) a {
+    background: url(../images/python.png) no-repeat;
+    background-size: 70px 70px;
+}
+
+.jobClass ul li:nth-child(5) a {
+    background: url(../images/ui.png) no-repeat;
+    background-size: 70px 70px;
+}
+
+.jobClass ul li:nth-child(6) a {
+    background: url(../images/fe-list.png) no-repeat;
+    background-size: 70px 70px;
+}
+
+.weClass {
+    padding-bottom: 60px;
+}
+
+.weClass ul li {
+    flex: 50%;
+}
+
+.weClass ul li a {
+    margin: 8px auto;
+    width: 180px;
+    height: 150px;
+    background: none!important;
+}
+
+.weClass ul li a img {
+    width: 100%;
+    height: 110px;
+}
+
+.weClass h3 {
+    margin: 2px auto 6px;
+}
+
+.weClass ul li a span {
+    color: #d0d0d0;
+    font-size: 14px;
+    float: left;
+}
+
+.weClass ul li a span.floatRight {
+    float: right;
+    color: #446adf;
+}
+
+.bottomNav {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 540px;
+    display: flex;
+}
+
+.bottomNav a {
+    color: #5bb5f5;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomNav a:first-child::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/效果图2_07.png) no-repeat;
+    margin-top: 8px;
+}
+
+.bottomNav a:last-child::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../images/效果图2_10.png) no-repeat;
+    margin-top: 8px;
+}

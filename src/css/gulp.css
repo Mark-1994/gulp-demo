@@ -1,0 +1,352 @@
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #333;
+}
+.search-content {
+  background-color: #FFC001;
+  position: fixed;
+  display: flex;
+  width: 15rem;
+  height: 1.76rem;
+  z-index: 999;
+}
+.search-content .classify {
+  width: 0.88rem;
+  height: 1.4rem;
+  background: url(../images/classify.png) no-repeat;
+  margin: 0.22rem 0.5rem 0.14rem 0.48rem;
+  background-size: 0.88rem 1.4rem;
+}
+.search-content .search {
+  flex: 1;
+}
+.search-content .search input {
+  outline: none;
+  border: 0;
+  font-size: 0.5rem;
+  width: 100%;
+  height: 1.32rem;
+  border-radius: 0.66rem;
+  background-color: #FFF2CC;
+  color: #757575;
+  margin-top: 0.24rem;
+  padding-left: 1.1rem;
+}
+.search-content .login {
+  font-size: 0.5rem;
+  color: #fff;
+  text-align: center;
+  width: 1.5rem;
+  height: 1.4rem;
+  margin: 0.2rem;
+  line-height: 1.4rem;
+}
+.banner {
+  width: 15rem;
+  height: 7.36rem;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.ad {
+  display: flex;
+}
+.ad a {
+  flex: 1;
+}
+.ad a img {
+  width: 100%;
+}
+nav {
+  width: 15rem;
+  margin-bottom: 30px;
+  *zoom: 1;
+}
+nav a {
+  float: left;
+  width: 3rem;
+  height: 2.8rem;
+  text-align: center;
+}
+nav a img {
+  display: block;
+  width: 1.64rem;
+  height: 1.64rem;
+  margin: 0.2rem auto 0;
+}
+nav a span {
+  font-size: 0.5rem;
+  color: #333;
+}
+nav:after,
+.advertisement:after {
+  content: '.';
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+.advertisement {
+  *zoom: 1;
+}
+.advertisement a {
+  float: left;
+}
+.advertisement a img {
+  width: 5rem;
+  font-size: 0;
+}
+.toutiao {
+  background: url(../images/154415248832630411.png) no-repeat;
+  background-size: 15rem 2.24rem;
+  font-size: 0.48rem;
+  width: 15rem;
+  height: 2.24rem;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.toutiao .tt-content {
+  margin: .1rem auto;
+  padding: 0 0 0 .4rem;
+  width: 14.04rem;
+  height: 2.04rem;
+}
+.toutiao .tt-content .list-wrapper {
+  float: left;
+  width: 12.32rem;
+  height: 2.04rem;
+  padding-left: 0.2rem;
+  overflow: hidden;
+  font-size: 0.48rem;
+  line-height: 0.7rem;
+  border-radius: 0.48rem;
+}
+.toutiao img.logo {
+  width: 1.32rem;
+  float: left;
+  margin-top: 0.36rem;
+}
+.toutiao ul li {
+  position: relative;
+  width: 12.32rem;
+  height: 2.04rem;
+  border-radius: 0.48rem;
+  overflow: hidden;
+  padding-top: 0.36rem;
+}
+.toutiao ul li i {
+  font-style: normal;
+  color: #fff;
+  background-image: linear-gradient(-90deg, #ff6f0e 0, #ff900c 100%);
+  padding: 0 0.2rem;
+  border-radius: 0.48rem;
+  font-size: 0.36rem;
+}
+.toutiao ul li span {
+  width: 7.2rem;
+  display: inline-block;
+  line-height: 0.66rem;
+  font-size: 0.48rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.toutiao ul li a img {
+  width: 2.04rem;
+  height: 2.04rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.toutiao ul li a p {
+  color: burlywood;
+  height: 0.66rem;
+  margin: 0;
+}
+.new-floor {
+  width: 14.04rem;
+  margin: 0.6rem auto 0;
+  border-radius: 0.48rem;
+  overflow: hidden;
+}
+.new-floor .new-enter {
+  width: 14.04rem;
+  height: 3.2rem;
+}
+.new-floor .new-enter a img {
+  width: 14.04rem;
+  height: 3.2rem;
+}
+.new-floor .space-px {
+  background-color: #f2f2f2;
+  width: 14.04rem;
+  height: 0.04rem;
+  margin: 0 auto;
+}
+.new-floor .v7-l1r2s {
+  width: 14.06rem;
+  height: 5rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.new-floor .v7-l1r2s .big-space {
+  position: relative;
+  background: #fff;
+  width: 7rem;
+  height: 5rem;
+  float: left;
+}
+.new-floor .v7-l1r2s .big-space .click-area {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.new-floor .v7-l1r2s .big-space .click-area .title {
+  float: left;
+  color: #FF6A0C;
+  font-size: 0.64rem;
+  letter-spacing: 0;
+  font-family: PingFangSC-Medium;
+  line-height: 0.8rem;
+  height: 0.8rem;
+  margin: 0.36rem 0 0 0.48rem;
+}
+.new-floor .v7-l1r2s .big-space .click-area .des {
+  font-size: 0.48rem;
+  color: #FA4B49;
+  overflow: hidden;
+  margin: 0.08rem 0 0 0.48rem;
+  width: 6rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.new-floor .v7-l1r2s .big-space .img-wrapper {
+  position: absolute;
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 1.96rem;
+  left: 0.48rem;
+  overflow: hidden;
+}
+.new-floor .v7-l1r2s .big-space .img-wrapper img {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: 0;
+}
+.new-floor .v7-l1r2s .big-space .right-wrapper {
+  left: 3.72rem;
+}
+.new-floor .v7-l1r2s .hor-gap {
+  width: 0.02rem;
+  height: 100%;
+  line-height: 0;
+  background: #f2f2f2;
+  float: left;
+}
+.new-floor .v7-l1r2s .small-space {
+  position: relative;
+  background: #fff;
+  width: 3.48rem;
+  height: 5rem;
+  float: left;
+}
+.new-floor .v7-l1r2s .small-space .click-area {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.new-floor .v7-l1r2s .small-space .title {
+  color: #e62e2e;
+  font-size: 0.64rem;
+  letter-spacing: 0;
+  line-height: 0.8rem;
+  overflow: hidden;
+  width: 3rem;
+  margin: 0.36rem 0 0 0.48rem;
+  height: 0.8rem;
+}
+.new-floor .v7-l1r2s .small-space .des {
+  color: #e62e31;
+  font-size: 0.48rem;
+  overflow: hidden;
+  margin: 0.08rem 0 0 0.48rem;
+  width: 3rem;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.new-floor .v7-l1r2s .small-space .img-wrapper {
+  position: absolute;
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 1.96rem;
+  left: 0.34rem;
+  overflow: hidden;
+}
+.new-floor .v7-l1r2s .small-space img {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+.v7-tab {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 15rem;
+  height: 2rem;
+  z-index: 199;
+  border-top: 0.02rem solid #EEE;
+}
+.v7-tab a {
+  position: relative;
+  display: block;
+  padding: .2rem 0;
+  width: 3rem;
+  height: 2rem;
+  background: #fff;
+}
+.v7-tab a span {
+  display: block;
+  margin-top: .04rem;
+  font-size: .4rem;
+  line-height: .56rem;
+  color: #333;
+  text-align: center;
+}
+.v7-tab a:first-child span {
+  color: #fa0;
+}
+.v7-tab img {
+  width: 1.12rem;
+  height: 1.12rem;
+  margin: 0 auto;
+  background: 0;
+  display: block;
+}
+.hor-view {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}

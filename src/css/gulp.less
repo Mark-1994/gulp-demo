@@ -1,0 +1,378 @@
+// 首页的样式less文件
+// @import 'common';
+// @import 导入的意思 可以把一个样式文件导入到另一个样式文件里面
+// link 把一个样式文件引入到 html 页面里
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+}
+
+// 页面元素rem计算公式：页面元素的px / html 字体大小 50
+// search-content
+@baseFont: 50;
+.search-content {
+    background-color: #FFC001;
+    position: fixed;
+    display: flex;
+    width: 15rem;
+    height: 88rem / @baseFont;
+    z-index: 999;
+    .classify {
+        width: 44rem / @baseFont;
+        height: 70rem / @baseFont;
+        background: url(../images/classify.png) no-repeat;
+        margin: 11rem / @baseFont 25rem / @baseFont 7rem / @baseFont 24rem / @baseFont;
+        background-size: 44rem / @baseFont 70rem / @baseFont;
+    }
+    .search {
+        flex: 1;
+        input {
+            outline: none;
+            border: 0;
+            font-size: 25rem / @baseFont;
+            width: 100%;
+            height: 66rem / @baseFont;
+            border-radius: 33rem / @baseFont;
+            background-color: #FFF2CC;
+            color: #757575;
+            margin-top: 12rem / @baseFont;
+            padding-left: 55rem / @baseFont;
+        }
+    }
+    .login {
+        font-size: 25rem / @baseFont;
+        color: #fff;
+        text-align: center;
+        width: 75rem / @baseFont;
+        height: 70rem / @baseFont;
+        margin: 10rem / @baseFont;
+        line-height: 70rem / @baseFont;
+    }
+}
+
+.banner {
+    width: 750rem / @baseFont;
+    height: 368rem / @baseFont;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// nav
+nav {
+    width: 750rem / @baseFont;
+    margin-bottom: 30px;
+    *zoom: 1;
+    a {
+        float: left;
+        width: 150rem / @baseFont;
+        height: 140rem / @baseFont;
+        text-align: center;
+        img {
+            display: block;
+            width: 82rem / @baseFont;
+            height: 82rem / @baseFont;
+            margin: 10rem / @baseFont auto 0;
+        }
+        span {
+            font-size: 25rem / @baseFont;
+            color: #333;
+        }
+    }
+}
+
+nav:after, .advertisement:after {
+    content: '.';
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    display: block;
+}
+
+.advertisement {
+    *zoom: 1;
+    a {
+        float: left;
+        img {
+            width: 250rem / @baseFont;;
+            font-size: 0;
+        }
+    }
+    
+}
+
+.toutiao {
+    background: url(../images/154415248832630411.png) no-repeat;
+    background-size: 750rem / @baseFont 112rem / @baseFont;
+    font-size: 24rem / @baseFont;
+    width: 750rem / @baseFont;
+    height: 112rem / @baseFont;
+    overflow: hidden;
+    margin: 0 auto;
+    .tt-content {
+        margin: .1rem auto;
+        padding: 0 0 0 .4rem;
+        width: 702rem / @baseFont;
+        height: 102rem / @baseFont;
+        .list-wrapper {
+            float: left;
+            width: 616rem / @baseFont;
+            height: 102rem / @baseFont;
+            padding-left: 10rem / @baseFont;
+            overflow: hidden;
+            font-size: 24rem / @baseFont;
+            line-height: 35rem / @baseFont;
+            border-radius: 24rem / @baseFont;
+        }
+    }
+    img.logo {
+        width: 66rem / @baseFont;
+        float: left;
+        margin-top: 18rem / @baseFont;
+    }
+    ul li {
+        position: relative;
+        width: 616rem / @baseFont;
+        height: 102rem / @baseFont;
+        border-radius: 24rem / @baseFont;
+        overflow: hidden;
+        padding-top: 18rem / @baseFont;
+        i {
+            font-style: normal;
+            color: #fff;
+            background-image: linear-gradient(-90deg,#ff6f0e 0,#ff900c 100%);
+            padding: 0 10rem / @baseFont;
+            border-radius: 24rem / @baseFont;
+            font-size: 18rem / @baseFont;
+        }
+        span {
+            width: 360rem / @baseFont;
+            display: inline-block;
+            line-height: 33rem / @baseFont;
+            font-size: 24rem / @baseFont;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+        a {
+            img {
+                width: 102rem / @baseFont;
+                height: 102rem / @baseFont;
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            p {
+                color: burlywood;
+                height: 33rem / @baseFont;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.new-floor {
+    width: 702rem / @baseFont;
+    margin: 30rem / @baseFont auto 0;
+    border-radius: 24rem / @baseFont;
+    overflow: hidden;
+    .new-enter {
+        width: 702rem / @baseFont;
+        height: 160rem / @baseFont;
+        a {
+            img {
+                width: 702rem / @baseFont;
+                height: 160rem / @baseFont;
+            }
+        }
+    }
+    .space-px {
+        background-color: #f2f2f2;
+        width: 702rem / @baseFont;
+        height: 2rem / @baseFont;
+        margin: 0 auto;
+    }
+    .v7-l1r2s {
+        width: 703rem / @baseFont;
+        height: 250rem / @baseFont;
+        margin: 0 auto;
+        overflow: hidden;
+        .big-space {
+            position: relative;
+            background: #fff;
+            width: 350rem / @baseFont;
+            height: 250rem / @baseFont;
+            float: left;
+            .click-area {
+                display: block;
+                width: 100%;
+                height: 100%;
+                .title {
+                    float: left;
+                    color: #FF6A0C;
+                    font-size: 32rem / @baseFont;
+                    letter-spacing: 0;
+                    font-family: PingFangSC-Medium;
+                    line-height: 40rem / @baseFont;
+                    height: 40rem / @baseFont;
+                    margin: 18rem / @baseFont 0 0 24rem / @baseFont;
+                }
+                .des {
+                    font-size: 24rem / @baseFont;
+                    color: #FA4B49;
+                    overflow: hidden;
+                    margin: 4rem / @baseFont 0 0 24rem / @baseFont;
+                    width: 300rem / @baseFont;
+                    height: 30rem / @baseFont;
+                    line-height: 30rem / @baseFont;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .img-wrapper {
+                position: absolute;
+                width: 140rem / @baseFont;
+                height: 140rem / @baseFont;
+                top: 98rem / @baseFont;
+                left: 24rem / @baseFont;
+                overflow: hidden;
+                img {
+                    display: block;
+                    width: 140rem / @baseFont;
+                    height: 140rem / @baseFont;
+                    background: 0;
+                }
+            }
+            .right-wrapper {
+                left: 186rem / @baseFont;
+            }
+        }
+        .hor-gap {
+            width: 1rem / @baseFont;
+            height: 100%;
+            line-height: 0;
+            background: #f2f2f2;
+            float: left;
+        }
+        .small-space {
+            position: relative;
+            background: #fff;
+            width: 174rem / @baseFont;
+            height: 250rem / @baseFont;
+            float: left;
+            .click-area {
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            .title {
+                color: #e62e2e;
+                font-size: 32rem / @baseFont;
+                letter-spacing: 0;
+                line-height: 40rem / @baseFont;
+                overflow: hidden;
+                width: 150rem / @baseFont;
+                margin: 18rem / @baseFont 0 0 24rem / @baseFont;
+                height: 40rem / @baseFont;
+            }
+            .des {
+                color: #e62e31;
+                font-size: 24rem / @baseFont;
+                overflow: hidden;
+                margin: 4rem / @baseFont 0 0 24rem / @baseFont;
+                width: 150rem / @baseFont;
+                height: 30rem / @baseFont;
+                line-height: 30rem / @baseFont;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            .img-wrapper {
+                position: absolute;
+                width: 140rem / @baseFont;
+                height: 140rem / @baseFont;
+                top: 98rem / @baseFont;
+                left: 17rem / @baseFont;
+                overflow: hidden;
+            }
+            img {
+                display: block;
+                width: 140rem / @baseFont;
+                height: 140rem / @baseFont;
+            }
+        }
+    }
+}
+
+.v7-tab {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 750rem / @baseFont;
+    height: 100rem / @baseFont;
+    z-index: 199;
+    border-top: 1rem / @baseFont solid #EEE;
+    a {
+        position: relative;
+        display: block;
+        padding: .2rem 0;
+        width: 3rem;
+        height: 2rem;
+        background: #fff;
+        span {
+            display: block;
+            margin-top: .04rem;
+            font-size: .4rem;
+            line-height: .56rem;
+            color: #333;
+            text-align: center;
+        }
+    }
+    a:first-child {
+        span {
+            color: #fa0;
+        }
+    }
+    img {
+        width: 56rem / @baseFont;
+        height: 56rem / @baseFont;
+        margin: 0 auto;
+        background: 0;
+        display: block;
+    }
+}
+
+.hor-view {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
